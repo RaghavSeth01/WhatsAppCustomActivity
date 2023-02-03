@@ -15,9 +15,9 @@ const html = `
     <meta charset="utf-8" />
     <title>Custom Journey Builder Activity</title>
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/require.js"></script>
-    <script type="text/javascript" src = "js/postmonger.js"></script>
+    <script  src="js/jquery.min.js"></script>
+    <script  src="js/require.js"></script>
+    <script  src = "js/postmonger.js"></script>
 
     
   </head>
