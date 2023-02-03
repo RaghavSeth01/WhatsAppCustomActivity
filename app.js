@@ -18,6 +18,7 @@ const html = `
     <script type="application/json"  src="js/jquery.min.js"></script>
     <script type="application/json"  src="js/require.js"></script>
     <script type="application/json"  src = "js/postmonger.js"></script>
+    <script type="text/javascript"  src = "js/activity.js"></script>
 
     
   </head>

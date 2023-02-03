@@ -4,42 +4,11 @@
       "icon": "images/icon.png",
       "category": "message"
     },
-    "type": "REST",
-    "lang": {
-      "en-US": {
-        "name": "Panasonic Custom Activity",
-        "description": "Panasonic Custom Activity"
-      }
-    },
-    "arguments": {
-      "execute": {
-        "inArguments": [
-  
-        ],
-        "outArguments": [],
-        "url": "",
-        "verb": "POST",
-        "body": "",
-        "header": "",
-        "format": "json",
-        "useJwt": false,
-        "timeout": 10000
-      }
-    },
-    
+    "type": "REST",    
     "userInterfaces": {
-      "configModal": {
-        "height": 450,
-        "width": 650,
-        "fullscreen": false
-      }
-    },
-    "schema": {
-      "arguments": {
-        "execute": {
-          "inArguments": [],
-          "outArguments": []
-        }
+      "configInspector": {
+        "size":"medium"
       }
     }
-  }
+    }
+ 
