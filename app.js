@@ -17,10 +17,10 @@ const html = `
 
     <script type="application/json" src="js/jquery.min.js"></script>
     <script type="application/json" src="js/require.js"></script>
-    <script type="application/json"
+    <script type="text/javascript">
       (function () {
         var config = {
-          baseUrl: "https://panasonic-whatsapp.onrender.com/",
+          baseUrl: "",
         };
 
         var dependencies = ["customActivity"];
