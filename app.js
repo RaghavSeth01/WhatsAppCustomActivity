@@ -17,6 +17,7 @@ const html = `
 
     <script type="application/json" src="js/jquery.min.js"></script>
     <script type="application/json" src="js/require.js"></script>
+    <script type="application/json" src="js/customActivity.js"></script>
     <script type="text/javascript">
       (function () {
         var config = {
