@@ -20,7 +20,7 @@ const html = `
     <script type="text/javascript">
       (function () {
         var config = {
-          baseUrl: "",
+          baseUrl: "js",
         };
 
         var dependencies = ["customActivity"];
