@@ -15,9 +15,9 @@ const html = `
     <meta charset="utf-8" />
     <title>Custom Journey Builder Activity</title>
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/require.js"></script>
-    <script type="text/javascript">
+    <script type="application/json" src="js/jquery.min.js"></script>
+    <script type="application/json" src="js/require.js"></script>
+    <script type="application/json"
       (function () {
         var config = {
           baseUrl: "",

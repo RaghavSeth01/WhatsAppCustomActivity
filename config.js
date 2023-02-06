@@ -2,90 +2,91 @@
     return {
         "workflowApiVersion": "1.1",
         "metaData": {
-            "icon": "images/icon.png",
-            
-            "category": "message"
+          "icon": "images/icon.png",
+          "category": "message"
         },
         "type": "REST",
         "lang": {
-            "en-US": {
-                "name": "Devs United Custom Activity",
-                "description": "Devs United Custom Activity"
-            }
+          "en-US": {
+            "name": "REST Activity (Workflow API v1.1)",
+            "description": "An example REST activity using workflow API v1.1 format."
+          }
         },
         "arguments": {
-            "execute": {
-                "inArguments": [
-                   
-                ],
-                "outArguments": [],
-                "url": "https://panasonic-whatsapp.onrender.com/CustomActivity/execute",
-                "verb": "POST",
-                "body": "",
-                "header": "",
-                "format": "json",
-                "useJwt": false,
-                "timeout": 10000
-            }
+          "execute": {
+            "inArguments": [
+              {
+                "emailAddress": "{{InteractionDefaults.Email}}"
+              },
+              {
+                "phoneNumber": "{{Contact.Default.PhoneNumber}}"
+              }
+            ],
+            "outArguments": [
+              {
+                "foundSignupDate": ""
+              }
+            ],
+            "url": "https://panasonic-whatsapp.onrender.com/execute"
+          }
         },
         "configurationArguments": {
-            "applicationExtensionKey": "e58b9c43-63a5-4446-bdcf-095ef0aaed50",
-            "save": {
-                "url": "https://panasonic-whatsapp.onrender.com/CustomActivity/save",
-                "verb": "POST",
-                "useJwt": true
-            },
-            "publish": {
-                "url": "https://panasonic-whatsapp.onrender.com/CustomActivity/publish",
-                "verb": "POST",
-                "useJwt": true
-            },
-            "stop": {
-                "url": "https://panasonic-whatsapp.onrender.com/CustomActivity/stop",
-                "verb": "POST",
-                "useJwt": true
-            },
-            "validate": {
-                "url": "https://panasonic-whatsapp.onrender.com//CustomActivity/validate",
-                "verb": "POST",
-                "useJwt": true
-            }
+          "save": {
+            "url": "https://panasonic-whatsapp.onrender.com/save"
+          },
+          "publish": {
+            "url": "https://panasonic-whatsapp.onrender.com/publish"
+          },
+          "validate": {
+            "url": "https://panasonic-whatsapp.onrender.com/validate"
+          },
+          "stop": {
+            "url": "https://panasonic-whatsapp.onrender.com/stop"
+          }
         },
         "wizardSteps": [
-          { "label": "Configuration", "key": "step1" }
-        ],
-        outcomes: [
-            {
-                arguments: {
-                    branchResult: 'sent',
-                },
-                metaData: {
-                    label: 'Sent',
-                },
-            },
-            {
-                arguments: {
-                    branchResult: 'notsent',
-                },
-                metaData: {
-                    label: 'Not Sent',
-                },
-            }
+          { "label": "Step 1", "key": "step1" },
+          { "label": "Step 2", "key": "step2" },
+          { "label": "Step 3", "key": "step3" },
+          { "label": "Step 4", "key": "step4", "active": false }
         ],
         "userInterfaces": {
-            "configModal": {
-                "height": 450,
-                "width": 650,
-                "fullscreen": false
-            }
+          "configModal": {
+            "height": 200,
+            "width": 300,
+            "fullscreen": true
+          }
         },
         "schema": {
-            "arguments": {
-                "execute": {
-                    "inArguments": [],
-                    "outArguments": []
+          "arguments": {
+            "execute": {
+              "inArguments": [
+                {
+                  "phoneNumber": {
+                    "dataType": "Phone",
+                    "isNullable": false,
+                    "direction": "in"
+                  }
+                },
+                {
+                  "emailAddress": {
+                    "dataType": "Email",
+                    "isNullable": false,
+                    "direction": "in"
+                  }
                 }
+              ],
+              "outArguments": [
+                {
+                  "foundSignupDate": {
+                    "dataType": "Date",
+                    "direction": "out",
+                    "access": "visible"
+                  }
+                }
+              ]
             }
+          }
         }
-    };
-});
+      }
+    })
