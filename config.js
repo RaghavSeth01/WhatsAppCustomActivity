@@ -19,7 +19,7 @@
                    
                 ],
                 "outArguments": [],
-                "url": "https://webinarca.devsutd.com/CustomActivity/execute",
+                "url": "https://panasonic-whatsapp.onrender.com/CustomActivity/execute",
                 "verb": "POST",
                 "body": "",
                 "header": "",
@@ -31,22 +31,22 @@
         "configurationArguments": {
             "applicationExtensionKey": "e58b9c43-63a5-4446-bdcf-095ef0aaed50",
             "save": {
-                "url": "https://webinarca.devsutd.com/CustomActivity/save",
+                "url": "https://panasonic-whatsapp.onrender.com/CustomActivity/save",
                 "verb": "POST",
                 "useJwt": true
             },
             "publish": {
-                "url": "https://webinarca.devsutd.com/CustomActivity/publish",
+                "url": "https://panasonic-whatsapp.onrender.com/CustomActivity/publish",
                 "verb": "POST",
                 "useJwt": true
             },
             "stop": {
-                "url": "https://webinarca.devsutd.com/CustomActivity/stop",
+                "url": "https://panasonic-whatsapp.onrender.com/CustomActivity/stop",
                 "verb": "POST",
                 "useJwt": true
             },
             "validate": {
-                "url": "https://webinarca.devsutd.com/CustomActivity/validate",
+                "url": "https://panasonic-whatsapp.onrender.com//CustomActivity/validate",
                 "verb": "POST",
                 "useJwt": true
             }
